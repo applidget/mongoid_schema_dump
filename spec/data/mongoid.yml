@@ -1,0 +1,8 @@
+test:
+  clients:
+    default:
+      database: schema_dump_gem
+      hosts:
+        - localhost:27017
+      options:
+        max_pool_size: 1
