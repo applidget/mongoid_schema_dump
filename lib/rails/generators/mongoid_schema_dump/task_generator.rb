@@ -8,7 +8,7 @@ module MongoidSchemaDump
       end
 
       def create_rake_task
-        template 'mongoid_schema_dump.rake', File.join('lib', "tasks", "mongoid_schema_dump.yml")
+        template 'mongoid_schema_dump.rake', File.join('lib', "tasks", "mongoid_schema_dump.rake")
       end
 
     end
