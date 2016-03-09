@@ -1,6 +1,7 @@
 require "mongoid_schema_dump/version"
 
 module MongoidSchemaDump
+  require 'mongoid_schema_dump/engine' if defined?(Rails)
   module_function
   
   #Computes all paths to reference class
