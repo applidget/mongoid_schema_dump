@@ -2,6 +2,8 @@
 
 This gem allows you to dump your Mongoid schema based on a top level object. If you have an `Organization` model or equivalent, this tool can help you get the shortest path (by following `belongs_to` relationships) from any other object from your data model to your `Organization` model. 
 
+You can then use the output of this gem in combination with https://github.com/applidget/mongo-partial-dump, a MongoDB extractor reading from a database a writing to another one based on the filters you define with this gem. 
+
 ## Installation
 
 Add this line to your application's Gemfile:
