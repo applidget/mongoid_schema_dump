@@ -9,18 +9,18 @@ Add this line to your application's Gemfile:
 ```ruby
 gem 'mongoid_schema_dump'
 ```
-
-And then execute:
-
-    $ bundle
+Then run `bundle install`
 
 Or install it yourself as:
 
     $ gem install mongoid_schema_dump
 
-## Usage
+## Usage in Rails
 
-TODO: Write usage instructions here
+You can install a rake task in your app allowing you to dump your schema. This rake task will have to be customized in order to take into account what is specific about your data model, in particular the reference class, which is Organization in the default generated rake task :
+
+    $ bundle exec rails generate mongoid_schema_dump:task
+
 
 ## Development
 
